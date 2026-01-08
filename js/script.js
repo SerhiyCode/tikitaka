@@ -4,3 +4,5 @@ document.getElementById('toggleBtn').addEventListener('click', () => {
     document.querySelector('.content-wrapper').classList.toggle('collapsed');
 }); 
 
+
+
