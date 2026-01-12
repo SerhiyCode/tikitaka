@@ -44,7 +44,7 @@ body {
 
     /* Текстові кольори */
     --stb-text-primary: #ffffff;
-    --stb-text-logo: #ffa90b;
+    --stb-text-logo-red: #FF492F;    
     --stb-text-ol: #ff3366;
 
     /* Кольори посилань */
@@ -112,11 +112,16 @@ body {
     z-index: 100;
 }  
 
-.logo {     
+.logo {      
+    display: inline-block;
     font-size: 24px;
-    font-weight: bold;
-    color: var(--stb-text-logo);          
-}
+    font-weight: bold; 
+    color: var(--stb-button-text-bright);
+} 
+
+.logo--red {
+      color: var(--stb-text-logo-red);          
+} 
 
 .header__right {    
     display: flex; 
