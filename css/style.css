@@ -19,7 +19,8 @@ a {
 }
 
 
-body { 
+body {  
+    box-sizing: border-box; 
     margin: 0;   
     font-size: 15px; 
     line-height: 1.6;
@@ -27,14 +28,6 @@ body {
     background-color: var(--stb-bg-secondary);
     color: var(--stb-button-text-bright);
   }  
-
-  /* html, body {
-    box-sizing: border-box; 
-           
-  }  */ 
-
-
-
 
 :root {
     /* Основні кольори фону */
@@ -68,24 +61,25 @@ body {
     --stb-cookie-banner-bg-tertiary: #2d2d3e; 
 }
 
+
+
 .container {
     width: 100%;
-    /* max-width: 1215px;   */ 
     max-width: 1515px;
     padding: 0 15px;  
     margin: 0 auto;
-}  
+}   
 
-.page__content-wrapper { 
+.page__content-wrapper {
     margin-top: 80px;
     transition:  0.3s ease;
-    min-height: calc(100vh - 80px);
-    background-color: var(--stb-bg-secondary);
 }
 
 .page__content-wrapper.collapsed {
-    margin-left: 200px; 
+    margin-left: 200px ;
 }
+
+
 
 .header { 
     position: relative;
@@ -144,6 +138,7 @@ body {
 }
 
 
+
 .sidebar {
     position: fixed;     
     top: 80px;
@@ -176,7 +171,12 @@ body {
 
 .sidebar__menu span:hover  {
     color: var(--stb-bar-menu-hover);
-}
+} 
+
+ .sidebar.collapsed { 
+    width: 70px; 
+    text-align: center;
+} 
 
 .sidebar.collapsed .sidebar__menu span {
     opacity: 0;                
@@ -294,23 +294,6 @@ body {
 
 .join__button:hover {
   background: var(--stb-button-primary-active);
-}
-
-
-
-/* Коли сайдбар згорнутий - зменшуємо ширину */
-.sidebar.collapsed {
-    width: 70px;
-}
-
-
-.sidebar.collapsed {
-    width: 70px; 
-    text-align: center;
-}
-
-.header__content .collapsed {
-     margin-left: 70px;                    
 }
 
 .section__article {
@@ -435,6 +418,9 @@ body {
 } 
 
 
+
+
+
 @media (max-width: 1200px) { 
   .page__content-wrapper {
       margin-left: 0 !important;
@@ -496,7 +482,8 @@ body {
   .article__section-title-center  {
     font-size: 20px;
   }
-} 
+}  
+
 
 @media (max-width: 320px) {  
   .header__inner {
