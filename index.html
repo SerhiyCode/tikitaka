@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TikiTaka</title>
     <link rel="stylesheet" href="css/style.css"> 
-    <link rel="icon" href="icon/seven.jpg"  type="icon">
+    <link rel="icon" href="icon/seven.jpg"  type="icon"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -53,70 +54,121 @@
             <li><a href="#"><i class="fa-solid fa-life-ring"></i><span>LIVE</span></a></li>
         </ul>  
         </div>        
-    </aside>
-
- <section class="section__article">    
-        <main class="main__content">
-            <div class="container">
-                <h3 class="article__section-title-center">Про нас </h3> 
-                            <p class="article__intro">
-                TikiTaka Casino — це сучасна онлайн-платформа, запущена в 2024 році, яка поєднує класичні казино-розваги з елементами футболу. Назва натхненна знаменитим стилем гри "тікі-така" — швидкі паси, контроль м'яча та непередбачуваність. Саме так тут побудований геймплей: динамічно, захопливо та з постійним адреналіном.
-            </p>
-            
-            <h2 class="article__section-title">Чому варто обрати TikiTaka Casino</h2>
-            <ol class="article__list colored-numbers">
-                <li class="article__list-item">Понад 5000 ігор від топових провайдерів</li>
-                <li class="article__list-item">Слоти з джекпотами, класичні столи (блекджек, рулетка, баккара)</li>
-                <li class="article__list-item">Live-казино з реальними дилерами від Evolution Gaming</li>
-                <li class="article__list-item">Спортивні ставки на тисячі подій</li>
-                <li class="article__list-item">Простий та мобільний інтерфейс — грайте з телефону без затримок</li>
-            </ol> 
-             <div class="article__gallery"> 
-                <div class="article__card">                       
-                <img src="img/casino-1.jpg" alt="Популярні слоти в TikiTaka Casino"    
-                class="article__gallery-img">  
-                <span>Популярні слоти в TikiTaka Casino</span>
-                </div> 
-                <div class="article__card"> 
-                <img src="img/casino-2.jpg" alt="Live-казино з реальними дилерами" class="article__gallery-img">  
-                <span>Live-казино з реальними дилерами</span>
-                </div> 
-                <div class="article__card"> 
-                <img src="img/casino-3.jpg" alt="Унікальний Bonus Crab в TikiTaka" class="article__gallery-img">  
-                <span>Унікальний Bonus Crab в TikiTaka</span>
-                </div>
-            </div>                        
-            <p class="article__text">
-              Ця казино пропонує неймовірно привабливу бонусну систему, яка здатна залучити навіть найвимогливіших гравців. Вітальний пакет до 500€ та 200 фріспінів створюють ідеальні умови для новачків, щоб швидко зануритися у гру та відчути азарт. Щотижневий кешбек до 25% дозволяє зменшити втрати та збільшити шанси на виграш, а релоад-бонуси стимулюють повернутися знову й знову. Унікальний Bonus Crab додає ще більше можливостей для отримання додаткових призів, що робить гру ще цікавішою. Для тих, хто цінує особливий статус, передбачена VIP-програма з коінами, турнірами та персональними менеджерами, які забезпечують індивідуальний підхід і підвищують рівень азарту. Загалом, ця платформа створена для тих, хто хоче отримувати максимальне задоволення та вигоди від гри, поєднуючи щедрі бонуси з високим рівнем сервісу.
-            </p>
-            
-            <p class="article__text">
-                TikiTaka — це не просто казино, а справжній матч, де ви контролюєте гру.
-            </p>
-            
-            <a href="https://tikitaka9.com/en/" class="article__link" target="_blank" rel="noopener">
-                Перейти на офіційний сайт TikiTaka Casino та отримати бонус
-            </a>            
-            <p class="article__text">
-                Реєструйтеся прямо зараз, хапайте вітальний бонус і вперед до перемог! Грайте та вигравайте будь на коні та насолоджуйтесь грою. Удачі на полі!
-            </p>
-            </div>
-        </main>
-    </div> 
- </article>
-</section> 
+    </aside> 
 
 
+ <main class="main"> 
+    <div class="container"> 
+     <div class="wrapper__container">        
+        <div class="container-inner-width">    
+    <div class="categories-menu">   
+        <div class="scroller-container"> 
+          <div class="scroller-wrap__control scroller-wrap__control--right" >
+      <button type="button" class="arrow-button arrow-button-right" id="nextBtn">
+         <svg width="20" height="20"> 
+           <use xlink:href="sprite/sprite.svg#arrow-right"></use>
+         </svg>
+    </button>
+   </div>  
+    <div class="scroller-wrap__control scroller-wrap__control--left" >
+      <button type="button" class="arrow-button arrow-button-left" id="blackBtn">
+         <svg width="20" height="20"> 
+           <use xlink:href="sprite/sprite.svg#arrow-left"></use>
+         </svg>
+    </button> 
+     </div>
+   </div> 
+    <div class="scroller-wrap">
+        <div class="scroller__inner"> 
+
+    <div class="menu">
+       <div class="menu__search">
+      <button type="button" class="category category--icon" aria-label="Search">
+        <span class="category__picture">
+          <svg class="icon" width="20" height="20"> 
+            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            <use xlink:href=""></use>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    
+    <div class="scroller scroller--custom-inline-paddings" id="categoryScroller">
+      <div class="scroller__inner">    
+        <a class="category " href="/en/providers">
+          <div class="category__picture">
+            <img width="28" height="28" src="icon/providers.svg" alt="Providers">
+          </div>
+          <span class="category__text">Providers</span>
+        </a>
+
+        <a class="category " href="/en/games/top">
+          <div class="category__picture">
+            <img width="28" height="28" alt="Top" src="icon/1718716401147_top.svg">
+          </div>
+          <span class="category__text">Top</span>
+        </a>
+
+        <a class="category " href="/en/games/new">
+          <div class="category__picture">
+            <img width="28" height="28" src="icon/1718716473144_new.svg">
+        </div>
+          <span class="category__text">New</span> 
+        </a>
+        <a  class="category" href="#">
+        <div class="category__picture">
+            <img width="28" height="28" alt="Popular" src="icon/1718716487475_popular.svg">
+        </div>
+        <span  class="category__text">Popular</span>
+        </a>
+        <a  class="category" href="#">
+        <div class="category__picture">
+            <img width="28" height="28" alt="Popular" src="icon/1718717231383_roulette.svg">
+        </div>
+        <span class="category__text">Roulette</span>
+        </a>
+        <a  class="category" href="#">
+        <div class="category__picture">
+            <img width="28" height="28" alt="Popular" src="icon/1718717260790_gameshows.svg">
+        </div>
+        <span class="category__text">GAME SHOWS</span>
+        </a>
+    <a  class="category" href="#">
+        <div class="category__picture">
+            <img width="28" height="28" alt="Popular" src="icon/1718717283461_blackjack.svg">
+        </div>
+        <span class="category__text">BLACK JACK</span>
+        </a>
+    <a  class="category" href="#">
+        <div class="category__picture">
+            <img width="28" height="28" alt="Popular" src="icon/1722340498460_hotjackpots.svg">
+        </div>
+        <span class="category__text">HOT JACKPOTS</span>
+        </a>
+        <a  class="category" href="#">
+          <div class="category__picture">
+              <img width="28" height="28" alt="Popular" src="icon/1718716566283_slots.svg">
+         </div>
+         <span class="category__text">SLOTS</span>
+           </a> 
+           </div>
+        </div> 
+      </div> 
+      </div>
+    </div>
+ </div> 
+  </div>
+</div> 
+</div> 
+</main> 
 
  
-<footer class="article__footer"> 
-    <div class="container"> 
-        <p>Стаття підготовлена для Affnetix Автор: Сергій </p> 
-    </div>
-</footer> 
-</div>
-    <script src="js/script.js">
-    </script>
+
+ 
+
+    <script src="js/script.js"></script>
+
 
 </body>
 </html>
